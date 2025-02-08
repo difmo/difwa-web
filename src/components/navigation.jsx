@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "./Logo";
 
 export const Navigation = (props) => {
   return (
@@ -11,15 +12,15 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            difwa
-          </a>{" "}
+          {/* Logo Image */}
+          <a className="navbar-brand page-scroll" href="#page-top" style={{ display: 'flex', alignItems: 'center' }}>
+            <Logo />
+          </a>
         </div>
 
         <div
