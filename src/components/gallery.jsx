@@ -8,8 +8,7 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2>Gallery</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          Explore Difwa’s journey of delivering pure, fresh water with quality and care.
           </p>
         </div>
         <div className="row">
