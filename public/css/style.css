@@ -262,7 +262,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding: 100px;
 }
 #about h3 {
   font-size: 22px;
@@ -598,6 +598,59 @@ label {
 #footer a:hover {
   border-bottom: 2px solid #11bafd;
 }
+
+.container-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#1c3656;
+  color: white;
+  padding: 50px;
+  height: 100vh;
+}
+
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+.discover-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.discover-btn:hover {
+  background: white;
+  color: #121d32;
+}
+
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-image {
+  max-width: 300px;
+  height: auto;
+}
+
 
 @media (max-width: 768px) {
   #about img {
