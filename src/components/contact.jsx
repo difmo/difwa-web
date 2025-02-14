@@ -1,12 +1,16 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
+// import { db } from "./firebaseConfig"; // Ensure you have firebaseConfig.js setup
+// import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import React from "react";
+import { db } from "../config/config";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 const initialState = {
   name: "",
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
@@ -15,26 +19,25 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name,
+        email,
+        message,
+        timestamp: serverTimestamp(),
+      });
+      alert("Message sent successfully!");
+      clearState();
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Failed to send message");
+    }
   };
+
   return (
     <div>
       <div id="contact">
@@ -60,8 +63,8 @@ export const Contact = (props) => {
                         placeholder="Name"
                         required
                         onChange={handleChange}
+                        value={name}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -74,8 +77,8 @@ export const Contact = (props) => {
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        value={email}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
                 </div>
@@ -88,76 +91,15 @@ export const Contact = (props) => {
                     placeholder="Message"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
-                  <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
               </form>
             </div>
           </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
-              <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
-              </p>
-            </div>
-          </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2025 Difwa Services. Design by{" "}
-            <a href="http://www.difmo.com" rel="nofollow">
-              Difmo Team
-            </a>
-          </p>
         </div>
       </div>
     </div>

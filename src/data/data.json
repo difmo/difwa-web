@@ -1,8 +1,8 @@
 {
   
     "Header": {
-      "title": "Pure Water, Delivered Fresh",
-      "paragraph": "Enjoy clean, fresh, and pure water delivered right to your doorstep with Difwa. We ensure high-quality, safe, and hassle-free water delivery for homes, offices, and businesses. Order with just a tap and stay refreshed every day!"
+      "title": "CRISP CLEAN WATER DELIVERED FRESH   ",
+      "paragraph": "Stay hydrated with clean, high-quality water delivered straight to your doorstep by Difwa. We ensure safe, hassle-free water delivery for homes, offices, and businesses. Just a tap away—order now and enjoy refreshing purity every day!"
     }
   
   
@@ -26,80 +26,80 @@
   "Gallery": [
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "largeImage": "img/portfolio/pure-water1.jpg",
+      "smallImage": "img/portfolio/pure-water1.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "largeImage": "img/portfolio/pure-water2.jpg",
+      "smallImage": "img/portfolio/pure-water2.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "largeImage": "img/portfolio/pure-water3.jpg",
+      "smallImage": "img/portfolio/pure-water3.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "largeImage": "img/portfolio/pure-water4.jpg",
+      "smallImage": "img/portfolio/pure-water4.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "largeImage": "img/portfolio/pure-water5.jpg",
+      "smallImage": "img/portfolio/pure-water5.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "largeImage": "img/portfolio/pure-water6.jpg",
+      "smallImage": "img/portfolio/pure-water6.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "largeImage": "img/portfolio/pure-water7.jpg",
+      "smallImage": "img/portfolio/pure-water7.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "largeImage": "img/portfolio/pure-water8.jpg",
+      "smallImage": "img/portfolio/pure-water8.jpg"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "largeImage": "img/portfolio/pure-water9.jpg",
+      "smallImage": "img/portfolio/pure-water9.jpg"
     }
   ],
   "Services": [
     {
       "icon": "fa fa-recycle",
-      "name": "Bottle Recycling Program",
-      "text": "We promote sustainability by offering a recycling program for used water bottles."
+      "name": "Hassle-Free Deliveries",
+      "text": "Get fresh water delivered on time, every time, with difwa's scheduled delivery service."
     },
     {
-      "icon": "fa fa-clock",
-      "name": "Scheduled Deliveries",
-      "text": "Set up recurring deliveries to ensure you never run out of fresh water."
+      "icon": "fa fa-recycle",
+      "name": "Sustainable Bottle Recycling",
+      "text": "Help the environment by returning used bottles for difwa's eco-friendly recycling."
     },
     {
       "icon": "fa fa-glass",
-      "name": "Various Bottle Sizes",
-      "text": "Choose from a range of bottle sizes to suit your household or business needs."
+      "name": "Custom Bottle Sizes",
+      "text": "Choose from a variety of bottle sizes from difwa to meet your home or business needs."
     },
     {
       "icon": "fa fa-handshake",
-      "name": "Corporate & Bulk Orders",
-      "text": "Special plans for businesses and offices with bulk water delivery needs."
+      "name": " Bulk & Business Orders",
+      "text": "Special bulk delivery options from difwa for offices, events, and commercial use."
     },
     {
       "icon": "fa fa-star",
-      "name": "Quality Assurance",
-      "text": "Strict quality checks to ensure every bottle meets safety and hygiene standards."
+      "name": "Strict Quality Control",
+      "text": "Every bottle from difwa is checked for purity, safety, and hygiene standards."
     },
     {
       "icon": "fa fa-gift",
-      "name": "Referral & Rewards Program",
-      "text": "Earn rewards and discounts by referring friends and family to Difwa."
+      "name": "Exclusive Referral Rewards",
+      "text": "Invite friends and family to difwa to earn discounts and exciting rewards."
     }
     
   ],
@@ -173,23 +173,23 @@
   "Features": [
     {
       "icon": "fa fa-mobile",
-      "title": "Easy-to-Use App",
-      "text": "A user-friendly interface for quick and hassle-free water ordering."
+      "title": "Effortless Ordering",
+      "text": "Order fresh, clean water from difwa in just a few taps with our easy-to-use app."
     },
     {
       "icon": "fa fa-leaf",
-      "title": "Eco-Friendly Approach",
-      "text": "We promote sustainable water packaging and delivery methods."
+      "title": "Eco-Friendly Practices",
+      "text": "Our dedicated difwa team is always ready to help with your orders and concerns."
     },
     {
       "icon": "fa fa-headphones",
-      "title": "24/7 Customer Support",
-      "text": "Our team is always available to assist with your orders and queries."
+      "title": "24/7 Customer Care",
+      "text": "Our dedicated team is always ready to help with your orders and concerns."
     },
     {
       "icon": "fa fa-truck",
-      "title": "Fast & Reliable Delivery",
-      "text": "Get fresh water delivered to your doorstep on time, every time."
+      "title": "Speedy & Secure Delivery",
+      "text": "Get pure water delivered quickly and safely by difwa, right to your doorstep."
     }
     
   ]
