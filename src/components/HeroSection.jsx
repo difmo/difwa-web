@@ -11,6 +11,7 @@ const HeroSection = () => {
           Discover More
         </button>
       </div>
+      //dkndoivhdvd
       <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
         <div className="relative w-60 h-[500px] bg-black rounded-3xl overflow-hidden shadow-lg">
           <img
