@@ -72,7 +72,7 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-recycle",
+      "icon": "fa fa-truck",
       "name": "Hassle-Free Deliveries",
       "text": "Get fresh water delivered on time, every time, with difwa's scheduled delivery service."
     },
@@ -82,17 +82,17 @@
       "text": "Help the environment by returning used bottles for difwa's eco-friendly recycling."
     },
     {
-      "icon": "fa fa-glass",
+      "icon": "fa fa-home",
       "name": "Custom Bottle Sizes",
       "text": "Choose from a variety of bottle sizes from difwa to meet your home or business needs."
     },
     {
-      "icon": "fa fa-handshake",
+      "icon": "fa fa-building",
       "name": " Bulk & Business Orders",
       "text": "Special bulk delivery options from difwa for offices, events, and commercial use."
     },
     {
-      "icon": "fa fa-star",
+      "icon": "fa fa-check-square",
       "name": "Strict Quality Control",
       "text": "Every bottle from difwa is checked for purity, safety, and hygiene standards."
     },
@@ -172,7 +172,7 @@
   },
   "Features": [
     {
-      "icon": "fa fa-mobile",
+      "icon": "fa fa-tint",
       "title": "Effortless Ordering",
       "text": "Order fresh, clean water from difwa in just a few taps with our easy-to-use app."
     },
@@ -182,12 +182,12 @@
       "text": "Our dedicated difwa team is always ready to help with your orders and concerns."
     },
     {
-      "icon": "fa fa-headphones",
+      "icon": "fa fa-bell",
       "title": "24/7 Customer Care",
       "text": "Our dedicated team is always ready to help with your orders and concerns."
     },
     {
-      "icon": "fa fa-truck",
+      "icon": "fa fa-rocket",
       "title": "Speedy & Secure Delivery",
       "text": "Get pure water delivered quickly and safely by difwa, right to your doorstep."
     }
