@@ -8,13 +8,18 @@ import Home from "./components/Home";
 // });
 
 import PaymentPage from "./components/PaymentPage";
+import Layout from "./components/Layout/Layout";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/payment-page" element={<PaymentPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/payment-page" element={<PaymentPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+        </Route>
       </Routes>
     </Router>
   );
