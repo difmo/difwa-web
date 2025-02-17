@@ -10,6 +10,7 @@ import { Team } from "./Team";
 import { Contact } from "./contact";
 import JsonData from "../data/data.json";
 
+
 const Home = () => {
   const [landingPageData, setLandingPageData] = useState({});
 
@@ -23,6 +24,7 @@ const Home = () => {
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
+  
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
       <Testimonials data={landingPageData.Testimonials} />
