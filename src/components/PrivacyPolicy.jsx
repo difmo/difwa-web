@@ -93,23 +93,25 @@ const PrivacyPolicy = () => {
       <p>
         If you have any questions, comments, or concerns about this Privacy
         Policy or our privacy practices, please contact us at:
-        <a href="mailto:diwfaservices@gmail.com">diwfaservices@gmail.com</a>.
+        <a href="mailto:difwaservices@gmail.com"> :- difwaservices@gmail.com</a>
+        .
       </p>
 
       <p style={{ border: "1px solid yellow", padding: "10px" }}>
         <strong>App Access Instructions</strong>
         <br />
         The user enters their identifier, such as an Email address -
-        test@gmail.com.
+        testdifwa@gmail.com.
         <br />
-        The user inputs their Password - Test@123 associated with their account.
+        The user inputs their Password - Testdifwa@123 associated with their
+        account.
       </p>
 
       <p>
         <strong>Effective Date</strong>
         <br />
-        This Privacy Policy is effective as of February 01, 2025, and was last
-        updated on February 08, 2025.
+        This Privacy Policy is effective as of February 16, 2025, and was last
+        updated on February 17, 2025.
       </p>
     </div>
   );
