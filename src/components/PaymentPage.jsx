@@ -101,6 +101,14 @@ const PaymentPage = () => {
 
           // Call updateWalletBalance after payment success
           await updateWalletBalance(amount); // Add the amount to the wallet balance
+
+          // Now, redirect the user back to the app
+          const returnUrl = new URLSearchParams(window.location.search).get(
+            "returnUrl"
+          );
+          if (returnUrl) {
+            window.location.href = returnUrl; // This will redirect to app://payment-result
+          }
         },
         modal: {
           ondismiss: function () {
@@ -166,6 +174,7 @@ const PaymentPage = () => {
           width: 100%;
           max-width: 28rem;
           text-align: center;
+          height: 600px;
         }
 
         .logo-container {
