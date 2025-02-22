@@ -6,7 +6,7 @@ import Home from "./components/Home";
 //   speed: 1000,
 //   speedAsDuration: true,
 // });
-
+//fghjm,
 import PaymentPage from "./components/PaymentPage";
 import Layout from "./components/Layout/Layout";
 import PrivacyPolicy from "./components/PrivacyPolicy";
