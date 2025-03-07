@@ -24,11 +24,7 @@ const Home = () => {
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
-<<<<<<< HEAD
-  
-=======
       <Phone />
->>>>>>> main
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
       <Testimonials data={landingPageData.Testimonials} />

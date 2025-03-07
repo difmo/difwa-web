@@ -13,7 +13,7 @@ function Phone() {
 
 
       <div className="image-section">
-        <img src="img/Phone.png" alt="Phone App Preview" className="phone-image" />
+        <img src="img/phone.png" alt="Phone App Preview" className="phone-image" />
       </div>
     </div>
   )

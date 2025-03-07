@@ -128,11 +128,11 @@ const PaymentPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+    <div className=" payment flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
       <div className="payment-card">
         <div className="logo-container">
           <img
-            src="https://your-logo-url.com/logo.png"
+            src="img/logo.svg"
             alt="Watrify Logo"
             className="logo"
           />
@@ -166,26 +166,44 @@ const PaymentPage = () => {
 
       {/* Custom CSS */}
       <style jsx>{`
+      .payment
+      {
+     height:600px;
+     width:100%;
+      background-image:url('img/payment.jpg');
+      background-repeat:no-repeat;
+      background-size:cover;
+      padding-top:40px;
+      
+      }
         .payment-card {
-          background-color: white;
-          padding: 2rem;
+          // background-color: white;
+          padding:2rem ;
+          border: 2px solid #11baf9;
           border-radius: 1rem;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-          width: 100%;
+          box-shadow: 0 18px 16px rgba(0, 0, 0, 0.74);
           max-width: 28rem;
           text-align: center;
-          height: 600px;
+             margin-left: 56rem;
+             margin-top: 90px;
+             width:100%;
+             height:400px;
+        
+          
         }
 
         .logo-container {
-          display: flex;
-          justify-content: center;
+        
+          display:flex;
+          align-item:center;
           margin-bottom: 1rem;
+         
         }
 
         .logo {
-          height: 4rem;
-          width: 4rem;
+          height: 15rem;
+          width: 15rem;
+           margin-left:3rem;
         }
 
         .heading {
@@ -203,6 +221,8 @@ const PaymentPage = () => {
 
         .payment-details {
           margin-bottom: 1.5rem;
+    
+       
         }
 
         .detail-text {
@@ -236,7 +256,12 @@ const PaymentPage = () => {
         }
       `}</style>
     </div>
+
+
+
+
   );
 };
 
 export default PaymentPage;
+
