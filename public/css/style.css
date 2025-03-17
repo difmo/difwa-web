@@ -7,12 +7,16 @@ html {
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+  margin: 0;
+  padding: 0;
 }
+
 h2,
 h3,
 h4 {
   font-family: "Raleway", sans-serif;
 }
+
 h2 {
   text-transform: uppercase;
   margin: 0 0 20px;
@@ -20,47 +24,53 @@ h2 {
   font-size: 36px;
   color: #333;
 }
+
 h3 {
   font-size: 20px;
   font-weight: 600;
   color: #333;
 }
+
 h4 {
   font-size: 18px;
   color: #333;
   font-weight: 600;
 }
+
 h5 {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 20px;
 }
+
 p {
   font-size: 15px;
 }
+
 p.intro {
   margin: 12px 0 0;
   line-height: 24px;
 }
+
 a {
   color: #11baf9;
   font-weight: 400;
 }
+
 a:hover,
 a:focus {
   text-decoration: none;
   color: #11baf9;
 }
+
 ul,
 ol {
   list-style: none;
-}
-ul,
-ol {
   padding: 0;
-  webkit-padding: 0;
-  moz-padding: 0;
+  -webkit-padding: 0;
+  -moz-padding: 0;
 }
+
 hr {
   height: 2px;
   width: 70px;
@@ -70,16 +80,19 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
+
 /* Navigation */
 #menu {
   padding: 15px;
   transition: all 0.8s;
 }
+
 #menu.navbar-default {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
+
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
@@ -87,6 +100,7 @@ hr {
   color: #333;
   text-transform: uppercase;
 }
+
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -97,6 +111,7 @@ hr {
   border-radius: 0;
   margin: 9px 20px 0;
 }
+
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
   position: absolute;
@@ -108,14 +123,17 @@ hr {
   content: "";
   transition: width 0.2s;
 }
+
 #menu.navbar-default .navbar-nav > li > a:hover:after {
   width: 100%;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
+
 .navbar-default .navbar-nav > .active > a:after,
 .navbar-default .navbar-nav > .active > a:hover:after,
 .navbar-default .navbar-nav > .active > a:focus:after {
@@ -129,26 +147,32 @@ hr {
   content: "" !important;
   transition: width 0.2s !important;
 }
+
 .navbar-toggle {
   border-radius: 0;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
   border-color: #11baf9;
 }
+
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #11baf9;
 }
+
 .section-title {
   margin-bottom: 70px;
 }
+
 .section-title h2 {
   position: relative;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
+
 .section-title h2::after {
   position: absolute;
   content: "";
@@ -159,9 +183,11 @@ hr {
   margin-left: -30px;
   left: 50%;
 }
+
 .section-title p {
   font-size: 18px;
 }
+
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -177,6 +203,7 @@ hr {
   transition: all 0.5s linear;
   border: 0;
 }
+
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom.focus,
@@ -186,6 +213,7 @@ hr {
   background-image: none;
   background-color: #11baf9;
 }
+
 .btn:active,
 .btn.active {
   background-image: none;
@@ -193,6 +221,7 @@ hr {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 a:focus,
 .btn:focus,
 .btn:active:focus,
@@ -203,18 +232,105 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #menu .navbar-nav > li > a {
+    font-size: 14px;
+    padding: 6px 4px;
+    margin: 6px 12px 0;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+  }
+
+  .btn-custom {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  #menu .navbar-nav > li > a {
+    font-size: 12px;
+    padding: 5px 3px;
+    margin: 5px 10px 0;
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .btn-custom {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .navbar-toggle {
+    margin-right: 10px;
+  }
+}
+
 /* Header Section */
+/* General Styles */
 .intro {
   display: table;
   width: 100%;
   padding: 0;
   background: url(../img/plastic-water.jpg) center center no-repeat;
   background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size: cover; /* Ensures the image covers the entire container */
+  /* background-position: center center; Keeps the image centered */
+  /* background-attachment: fixed; Optional: fixes the background while scrolling */
+  -webkit-background-size: cover; /* For Safari */
+  -moz-background-size: cover; /* For Firefox */
+  -o-background-size: cover; /* For older versions of Opera */
 }
+
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -236,7 +352,7 @@ a:focus,
   font-size: 22px;
   font-weight: 300;
   line-height: 30px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-bottom: 60px;
 }
 header .intro-text {
@@ -244,10 +360,76 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
+
+/* Responsive Styles */
+
+/* Mobile (portrait and landscape) */
+@media screen and (max-width: 767px) {
+  .intro h1 {
+    font-size: 48px; /* Reduced size for mobile */
+  }
+  .intro p {
+    font-size: 18px; /* Adjusted text size for readability */
+    margin-bottom: 30px; /* Reduced margin for mobile */
+  }
+  header .intro-text {
+    padding-top: 150px; /* Adjusted padding for better spacing */
+    padding-bottom: 80px; /* Reduced bottom padding */
+  }
+}
+
+/* Tablet (portrait and landscape) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro h1 {
+    font-size: 65px; /* Adjusted font size for tablets */
+  }
+  .intro p {
+    font-size: 20px; /* Slightly smaller text */
+    margin-bottom: 40px; /* Reduced margin for tablets */
+  }
+  header .intro-text {
+    padding-top: 250px; /* Adjusted padding */
+    padding-bottom: 120px; /* Reduced padding for better fit */
+  }
+}
+
+/* Laptop and smaller desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .intro h1 {
+    font-size: 72px; /* Adjusted font size */
+  }
+  .intro p {
+    font-size: 21px; /* Slightly smaller text */
+    margin-bottom: 50px; /* Reduced margin */
+  }
+  header .intro-text {
+    padding-top: 300px; /* Adjusted padding */
+    padding-bottom: 150px; /* Adjusted padding for better spacing */
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1281px) {
+  .intro h1 {
+    font-size: 82px; /* Default large font size */
+  }
+  .intro p {
+    font-size: 22px; /* Default font size */
+    margin-bottom: 60px; /* Default margin */
+  }
+  header .intro-text {
+    padding-top: 350px; /* Default padding */
+    padding-bottom: 200px; /* Default padding */
+  }
+}
+
 /* Features Section */
 #features {
   background: #f6f6f6;
+  padding: 40px 15px; /* Added padding for spacing on smaller screens */
+  box-sizing: border-box;
 }
+
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
@@ -259,6 +441,123 @@ header .intro-text {
   border-radius: 50%;
   background: linear-gradient(to right, #11baf9 0%, #a7e6fd 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Responsive Styles */
+
+/* Mobile (portrait and landscape) */
+@media screen and (max-width: 767px) {
+  .intro h1 {
+    font-size: 36px; /* Adjusted for smaller devices */
+  }
+
+  .intro p {
+    font-size: 16px; /* Slightly smaller text on mobile */
+    margin-bottom: 20px; /* Less margin on mobile */
+  }
+
+  header .intro-text {
+    padding-top: 150px; /* Adjusted padding to fit content better */
+    padding-bottom: 80px; /* Adjusted padding */
+  }
+
+  #features {
+    padding: 30px 10px; /* Added padding on smaller screens */
+  }
+
+  #features i.fa {
+    font-size: 28px;
+    width: 80px;
+    height: 80px;
+    padding: 20px 0;
+    margin-bottom: 15px; /* Reduced bottom margin */
+  }
+
+  /* Adjust the container for mobile to ensure flexibility */
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the icons on smaller screens */
+    gap: 20px;
+  }
+
+  .features-container .feature {
+    flex: 1 1 45%; /* Allows two icons per row */
+    text-align: center;
+    margin-bottom: 30px; /* Added bottom margin for spacing */
+  }
+
+  /* You can adjust text size for feature descriptions if necessary */
+  .features-container .feature p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro h1 {
+    font-size: 65px;
+  }
+  .intro p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  header .intro-text {
+    padding-top: 280px;
+    padding-bottom: 160px;
+  }
+  #features i.fa {
+    font-size: 34px;
+    width: 90px;
+    height: 90px;
+    padding: 25px 0;
+  }
+}
+
+/* Laptop and smaller desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .intro h1 {
+    font-size: 72px;
+  }
+  .intro p {
+    font-size: 21px;
+    margin-bottom: 50px;
+  }
+  header .intro-text {
+    padding-top: 320px;
+    padding-bottom: 180px;
+  }
+  #features i.fa {
+    font-size: 36px;
+    width: 95px;
+    height: 95px;
+    padding: 26px 0;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1281px) {
+  .intro h1 {
+    font-size: 82px;
+  }
+  .intro p {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+  header .intro-text {
+    padding-top: 350px;
+    padding-bottom: 200px;
+  }
+  #features i.fa {
+    font-size: 38px;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+  }
 }
 /* About Section */
 #about {
@@ -307,10 +606,17 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
+
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #11baf9 0%, #a7e6fd 100%);
+  background: linear-gradient(
+      140deg,
+      rgba(3, 94, 139, 0.93),
+      rgba(0, 203, 169, 0.73),
+      rgba(0, 225, 80, 0.04)
+    ),
+    linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
   color: #fff;
 }
 #services .service-desc {
@@ -334,7 +640,7 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #11baf9 0%, #a7e6fd 100%);
+  background: rgb(12 13 13 / 50%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -350,6 +656,7 @@ header .intro-text {
 #services .service-desc {
   margin-bottom: 40px;
 }
+
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
@@ -369,10 +676,12 @@ header .intro-text {
   margin: 0 auto;
   color: #fff;
   background: linear-gradient(
-    to right,
-    #11bbf986 0%,
-    #a7e6fdbb 100%
-  );
+      140deg,
+      rgba(3, 94, 139, 0.93),
+      rgba(0, 203, 169, 0.73),
+      rgba(0, 225, 80, 0.04)
+    ),
+    linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
   padding: 30% 0 0;
   height: 100%;
   width: 100%;
@@ -399,6 +708,172 @@ header .intro-text {
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
+
+/* Responsive Styles */
+
+/* Mobile (portrait and landscape) */
+@media screen and (max-width: 767px) {
+  #about {
+    padding: 40px 10px;
+  }
+  #about h3 {
+    font-size: 18px; /* Smaller font for mobile */
+  }
+  #about h2 {
+    font-size: 24px; /* Adjusted for small screens */
+  }
+  #about img {
+    width: 100%; /* Full width image */
+    margin-top: 10px;
+  }
+  #services {
+    padding: 50px 20px; /* Adjust padding for mobile */
+    background: linear-gradient(
+        140deg,
+        rgba(3, 94, 139, 0.93),
+        rgba(0, 203, 169, 0.73),
+        rgba(0, 225, 80, 0.04)
+      ),
+      linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
+  }
+  #services i.fa {
+    font-size: 30px; /* Smaller icons for mobile */
+    width: 80px;
+    height: 80px;
+    padding: 20px 0;
+  }
+  #services h3 {
+    font-size: 18px; /* Smaller title font size */
+  }
+  #portfolio {
+    padding: 50px 20px; /* Reduced padding for mobile */
+  }
+  .portfolio-item {
+    margin: 10px 0; /* Adjusted for mobile layout */
+  }
+  .hover-bg .hover-text > h4 {
+    font-size: 14px; /* Smaller text for hover effect */
+  }
+}
+
+/* Tablet (portrait and landscape) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #about {
+    padding: 60px 20px;
+  }
+  #about h3 {
+    font-size: 20px; /* Adjusted font size */
+  }
+  #about h2 {
+    font-size: 26px; /* Slightly larger font */
+  }
+  #about img {
+    width: 100%; /* Make the image responsive */
+    margin-top: 20px;
+  }
+  #services {
+    padding: 70px 20px;
+  }
+  #services i.fa {
+    font-size: 36px;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+  }
+  #portfolio {
+    padding: 80px 20px;
+  }
+  .portfolio-item {
+    margin: 5px 10px;
+  }
+  .hover-bg .hover-text > h4 {
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+}
+
+/* Laptop and smaller desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #about {
+    padding: 80px 40px;
+    background: linear-gradient(
+        140deg,
+        rgba(3, 94, 139, 0.93),
+        rgba(0, 203, 169, 0.73),
+        rgba(0, 225, 80, 0.04)
+      ),
+      linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
+  }
+  #about h3 {
+    font-size: 22px; /* Default font size */
+  }
+  #about h2 {
+    font-size: 30px; /* Adjusted for laptops */
+  }
+  #about img {
+    width: 50%; /* Image width reduced */
+    margin-top: 20px;
+  }
+  #services {
+    padding: 80px 40px;
+  }
+  #services i.fa {
+    font-size: 40px;
+    width: 110px;
+    height: 110px;
+    padding: 35px 0;
+  }
+  #portfolio {
+    padding: 90px 40px;
+  }
+  .portfolio-item {
+    margin: 5px 20px;
+  }
+  .hover-bg .hover-text > h4 {
+    font-size: 18px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1281px) {
+  #about {
+    padding: 100px;
+  }
+  #about h3 {
+    font-size: 22px;
+  }
+  #about h2 {
+    font-size: 32px;
+  }
+  #about img {
+    width: 520px;
+  }
+  #services {
+    padding: 100px 0;
+    background: linear-gradient(
+        140deg,
+        rgba(3, 94, 139, 0.93),
+        rgba(0, 203, 169, 0.73),
+        rgba(0, 225, 80, 0.04)
+      ),
+      linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
+  }
+  #services i.fa {
+    font-size: 42px;
+    width: 120px;
+    height: 120px;
+    padding: 40px 0;
+  }
+  #portfolio {
+    padding: 100px 0;
+  }
+  .portfolio-item {
+    margin: 1px -15px 0 -14px;
+  }
+  .hover-bg .hover-text > h4 {
+    font-size: 18px;
+  }
+}
+
 /* Testimonials Section */
 #testimonials {
   padding: 100px 0;
@@ -460,8 +935,13 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #11baf9 0%, #a7e6fd 100%);
-  color: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(
+      140deg,
+      rgba(3, 94, 139, 0.93),
+      rgba(0, 203, 169, 0.73),
+      rgba(0, 225, 80, 0.04)
+    ),
+    linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
 }
 #contact .section-title {
   margin-bottom: 40px;
@@ -478,7 +958,13 @@ header .intro-text {
 #contact .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+      140deg,
+      rgba(3, 94, 139, 0.93),
+      rgba(0, 203, 169, 0.73),
+      rgba(0, 225, 80, 0.04)
+    ),
+    linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -493,6 +979,9 @@ header .intro-text {
 }
 #contact form {
   padding-top: 20px;
+}
+.text-white {
+  color: white;
 }
 #contact .text-danger {
   color: #cc0033;
@@ -598,29 +1087,31 @@ label {
 #footer a:hover {
   border-bottom: 2px solid #11bafd;
 }
-
+/* General layout for the container */
 .container-app {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#000614;
+  background-color: #000614;
   color: white;
   padding: 50px;
   height: 100vh;
+  flex-wrap: wrap;
 }
 
-
+/* Text section styles */
 .text-section {
   flex: 1;
   padding: 20px;
+  min-width: 250px;
 }
 
 .text-section h1 {
   font-size: 4rem;
   font-weight: bold;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
-
 
 .discover-btn {
   background: transparent;
@@ -639,21 +1130,84 @@ label {
   color: #121d32;
 }
 
-
 .image-section {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .phone-image {
   max-width: 300px;
   height: auto;
+  object-fit: contain;
 }
 
+/* Tablet (less than 1024px) */
+@media (max-width: 1024px) {
+  .container-app {
+    padding: 40px;
+  }
 
+  .text-section h1 {
+    font-size: 3.5rem;
+  }
+
+  .discover-btn {
+    font-size: 1.8rem;
+    padding: 8px 16px;
+  }
+
+  /* .phone-image {
+    max-width: 250px; 
+  } */
+
+  /* Adjust layout to stack for smaller screens */
+  .container-app {
+    flex-direction: column;
+    text-align: center; /* Center text and image */
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Mobile (less than 768px) */
 @media (max-width: 768px) {
-  #about img {
-    margin: 50px 0;
+  .text-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .discover-btn {
+    font-size: 1.5rem;
+    padding: 10px 18px;
+  }
+
+  /* Stack elements vertically */
+  .container-app {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  /* 
+  .image-section {
+    margin-top: 20px;  } */
+}
+
+/* Extra small mobile (less than 480px) */
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 2rem; /* Even smaller font size for very small screens */
+  }
+
+  .discover-btn {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+
+  .phone-image {
+    max-width: 170px;
   }
 }
