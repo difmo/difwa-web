@@ -8,6 +8,7 @@ import Home from "./components/Home";
 // });
 //fghjm,
 import PaymentPage from "./components/PaymentPage";
+import PaymentPage from "./components/PaymentResult";
 import Layout from "./components/Layout/Layout";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/payment-page" element={<PaymentPage />} />
+           <Route path="/payment-result" element={<PaymentResult />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
         </Route>
       </Routes>
