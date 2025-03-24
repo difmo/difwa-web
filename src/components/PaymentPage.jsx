@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { db, doc, getDoc, updateDoc } from "../config/config";
+import { useNavigate } from "react-router-dom";
 
 const PaymentPage = () => {
   const [userId, setUserId] = useState("");
   const [amount, setAmount] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
+ const navigate = useNavigate();
   useEffect(() => {
     try {
       const urlParams = new URLSearchParams(window.location.search);
@@ -78,8 +79,8 @@ const PaymentPage = () => {
 
           await updateWalletBalance(amount);
 
-          const returnUrl = new URLSearchParams(window.location.search).get("returnUrl");
-          window.location.href = `${returnUrl}&payment_id=${response.razorpay_payment_id}&status=success`;
+          const returnUrl = `/payment-result?payment_id=${response.razorpay_payment_id}&status=success`;
+          navigate(returnUrl);
         },
 
         modal: {
